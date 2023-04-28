@@ -71,22 +71,6 @@ We are now at the last part of step by step guide on how to simulate STM32 proje
 
 
 ## STM 32 CUBE PROGRAM :
-
-
-
-
-## Output screen shots of proteus  :![IMG-20230428-WA0001](https://user-images.githubusercontent.com/119405916/235105162-eebc9994-f50e-475c-9178-2646466a139a.jpg)
-
-
-
-
-
-## Proteus layout(Add pdf screen shot of circuit here)
- 
- 
- 
- 
-## Result :
 ```
 #include "main.h"
 void SystemClock_Config(void);
@@ -105,6 +89,26 @@ int main(void)
   }
  }
 ```
+
+
+
+
+## Output screen shots of proteus  :![IMG-20230428-WA0001](https://user-images.githubusercontent.com/119405916/235106797-f87eb093-9c93-4bbe-9f63-14f92f9c0cc9.jpg)
+
+
+
+
+
+
+
+## Proteus layout(Add pdf screen shot of circuit here)![IMG-20230428-WA0002](https://user-images.githubusercontent.com/119405916/235106601-c3f53ad7-14f1-4347-b920-d3335ac11b2f.jpg)
+
+ 
+ 
+ 
+ 
+## Result :
+
 Interfacing a digital output and digital input  with ARM microcontroller are simulated in proteus and the results are verified.
 
 
