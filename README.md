@@ -75,7 +75,8 @@ We are now at the last part of step by step guide on how to simulate STM32 proje
 
 
 
-## Output screen shots of proteus  :
+## Output screen shots of proteus  :![IMG-20230428-WA0001](https://user-images.githubusercontent.com/119405916/235105162-eebc9994-f50e-475c-9178-2646466a139a.jpg)
+
 
 
 
@@ -86,6 +87,24 @@ We are now at the last part of step by step guide on how to simulate STM32 proje
  
  
 ## Result :
+```
+#include "main.h"
+void SystemClock_Config(void);
+static void MX_GPIO_Init(void);
+int main(void)
+{
+  HAL_Init();
+  SystemClock_Config();
+  MX_GPIO_Init();
+  while (1)
+  {
+	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+	  HAL_Delay(500);
+	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+	  HAL_Delay(500);
+  }
+ }
+```
 Interfacing a digital output and digital input  with ARM microcontroller are simulated in proteus and the results are verified.
 
 
